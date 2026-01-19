@@ -124,3 +124,58 @@
     @apply bg-background text-foreground;
   }
 }
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tech {
+  width: max-content;
+  height: max-content;
+  perspective: 2000px;
+  position: absolute;
+}
+
+.master-cube {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  transform-style: preserve-3d;
+  left: "";
+  top: "";
+  display: show;
+
+}
+
+.outside {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  transform-style: preserve-3d;
+  border: black solid 5px;
+  opacity: 0.7;
+}
+
+
+
+.outside.front  { background:rgb(55, 54, 56); }
+.outside.right  { background:rgb(55, 54, 56); }
+.outside.back   { background:rgb(55, 54, 56); }
+.outside.left   { background:rgb(55, 54, 56); }
+.outside.top    { background:rgb(55, 54, 56); }
+.outside.bottom { background:rgb(55, 54, 56); }
+
+.outside.front {transform: rotateY(  0deg) translateZ(400px);}
+.outside.right {transform: rotateY(90deg) translateZ(400px);}
+.outside.back {transform: rotateY(180deg) translateZ(400px);}
+.outside.left {transform: rotateY(-90deg) translateZ(400px);}
+.outside.top {transform: rotateX(90deg) translateZ(400px);}
+.outside.bottom {transform: rotateX(-90deg) translateZ(400px);}
+
+label { margin-right: 10px; }
