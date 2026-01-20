@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   description: 'My Portfolio',
 }
 
+/******************************************************************************************************/
+/*                                                                                                    */
+/*                                        MANGO DATABASE                                              */
+/*                                                                                                    */
+/* mongodb+srv://adamdechamp_db_usedr:5wRX8JfxnlQVkLH1@cluster0.klgl4zc.mongodb.net/?appName=Cluster0 */
+/*                                                                                                    */
+/*                                                                                                    */
+/******************************************************************************************************/
 export default function RootLayout({
   children,
 }: Readonly<{

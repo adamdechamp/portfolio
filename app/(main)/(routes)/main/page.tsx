@@ -1,4 +1,5 @@
 import Cube from "@/components/cube";
+import { Button } from "@/components/ui/button";
 
 
 
@@ -11,8 +12,13 @@ const MainPage = () => {
                     Welcome
                 </h2>
                 <p className="mb-0 text-muted-foreground text-center font-light text-sm md:text-lg">
-                    Start schedualing your life now.
+                    Choose a Path or Roll the Dice.
                 </p>
+                <div className="flex justify-center p-20 gap-4 h-16">
+                    <Button className="bg-[#6c47ff] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer">
+                        Roll
+                    </Button>
+                </div>
             </div>
             <div className="prevent-select flex min-h-screen flex-col items-center justify-top">
                 <Cube />

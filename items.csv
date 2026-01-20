@@ -1,0 +1,4 @@
+Object,amount,expected,required
+apples,0,4,yes
+banana,3,10,yes
+pork,0,1,yes
