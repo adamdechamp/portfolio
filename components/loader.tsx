@@ -7,11 +7,11 @@ export const Loader = () => {
                 <Image 
                     alt="logo"
                     fill
-                    src="/PC_logo5.png"
+                    src="/globe.svg"
                 />
             </div>
             <p className="test-sm text-muted-foreground">
-                Alfred is thinking....
+                The Magic 8 is searching the future....
             </p>
         </div>
     );
