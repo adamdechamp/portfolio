@@ -39,12 +39,6 @@ export default function RootLayout({
           <div>
               <div>
                 {children}
-                <Starfield
-                  starCount={3000}
-                  starColor={[255 , 255, 255]}
-                  speedFactor={0.05}
-                  backgroundColor="black"
-                />
               </div>
           <div className="App">
           </div>

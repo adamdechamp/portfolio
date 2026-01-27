@@ -1,13 +1,13 @@
 import '@/app/globals.css'
 
 
-const Magic8Page = () => {
+const Searching = () => {
 
     return(
         <div>
             <div className="prevent-select">
                     <div className="scene">
-                        <div className="sphere">
+                        <div className="searching">
                             <div className="hemisphere">
                         </div>
                         <div className="hemisphere">
@@ -21,4 +21,4 @@ const Magic8Page = () => {
 }
 
 
-export default Magic8Page;
+export default Searching;

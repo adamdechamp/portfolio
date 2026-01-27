@@ -1,5 +1,6 @@
 import Cube from "@/components/cube";
 import { Button } from "@/components/ui/button";
+import Starfield from "react-starfield";
 
 
 
@@ -7,6 +8,12 @@ const MainPage = () => {
 
     return(
         <div>
+            <Starfield
+                starCount={3000}
+                starColor={[255 , 255, 255]}
+                speedFactor={0.05}
+                backgroundColor="black"
+            />
             <div className="mb-1 space-y-4 w-full content-center">
                 <h2 className="text-2xl md:text-4xl font-bold text-center">
                     Welcome

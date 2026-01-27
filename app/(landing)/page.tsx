@@ -1,10 +1,17 @@
 import { Button } from '@/components/ui/button';
 
 import Link from "next/link";
+import Starfield from 'react-starfield';
 
 const LandingPage = () => {
   return (
     <div>
+      <Starfield
+        starCount={3000}
+        starColor={[255 , 255, 255]}
+        speedFactor={0.05}
+        backgroundColor="black"
+      />
         <div className="flex justify-center p-50 gap-4 h-22">
             <h1 className='font-bold text-6xl'>
                 Welcome

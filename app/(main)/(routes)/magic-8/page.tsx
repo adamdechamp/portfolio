@@ -1,5 +1,6 @@
 "use client";
 
+
 import axios from "axios";
 import * as z from "zod";
 import Heading from "@/components/heading";
@@ -23,7 +24,8 @@ import { ChatCompletionUserMessageParam } from "openai/resources";
 import { Loader } from "@/components/loader";
 import { cn } from "@/lib/utils"
 import { BotAvatar } from "@/components/bot-avatar";
-import Sphere from "@/components/8-ball"
+import Sphere from "@/components/8-ball";
+import Searching from "@/components/searching";
 
 const Magic8Page = () => {
 
@@ -51,7 +53,6 @@ const Magic8Page = () => {
             form.reset();
         }
         catch (error) {
-            //TODO: Open Pro Modal
             console.log(error);
         } finally {
            router.refresh();
@@ -110,6 +111,14 @@ const Magic8Page = () => {
                             The future awaits
                         </div>    
                     )}
+                                <div>
+            {isLoading && (
+                <Searching />
+            )}
+            {!isLoading && (
+                 <Sphere />
+            )}
+            </div>
                     <div className="flex flex-col-reverse gap-y-4">
                         {messages.map((message) => (
                             <div 
@@ -126,9 +135,6 @@ const Magic8Page = () => {
                         ))}
                     </div>
                 </div>
-            </div>
-            <div>
-                <Sphere />
             </div>
         </div>
     )
