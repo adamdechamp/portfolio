@@ -1,13 +1,16 @@
 import Cube from "@/components/cube";
 import { Button } from "@/components/ui/button";
+import Script from "next/script";
 import Starfield from "react-starfield";
-
 
 
 const MainPage = () => {
 
     return(
+        <>
         <div>
+           
+            <Script src="@/components/scripts/cube"/>
             <Starfield
                 starCount={3000}
                 starColor={[255 , 255, 255]}
@@ -31,6 +34,7 @@ const MainPage = () => {
                 <Cube />
             </div>
         </div>
+        </>
     );
 }
 

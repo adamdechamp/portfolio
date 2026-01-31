@@ -11,7 +11,8 @@ const Searching = () => {
                             <div className="hemisphere">
                         </div>
                         <div className="hemisphere">
-                            <div className="theEye"></div>
+                            <div className="theEye">
+                            </div>
                        </div>
                     </div>
                 </div>

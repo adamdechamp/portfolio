@@ -126,12 +126,25 @@
   }
 }
 
-
 .prevent-select {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
+
+
+
+/*********************************************************************************************/
+/*                                                                                           */
+/*                                                                                           */
+/*                                     3D Rotating Cube                                      */
+/*                                                                                           */
+/*                                                                                           */
+/*********************************************************************************************/
+
+
+
 
 .tech {
   width: max-content;
@@ -162,13 +175,12 @@
 }
 
 
-
-.outside.front  { background:rgb(55, 54, 56); }
-.outside.right  { background:rgb(55, 54, 56); }
-.outside.back   { background:rgb(55, 54, 56); }
-.outside.left   { background:rgb(55, 54, 56); }
-.outside.top    { background:rgb(55, 54, 56); }
-.outside.bottom { background:rgb(55, 54, 56); }
+.outside.front  { background:rgb(129, 72, 185); }
+.outside.right  { background:rgb(192, 99, 99); }
+.outside.back   { background:rgb(216, 145, 78); }
+.outside.left   { background:rgb(199, 171, 78); }
+.outside.top    { background:rgb(99, 216, 105); }
+.outside.bottom { background:rgb(92, 101, 221); }
 
 .outside.front {transform: rotateY(  0deg) translateZ(400px);}
 .outside.right {transform: rotateY(90deg) translateZ(400px);}
@@ -268,11 +280,7 @@ label { margin-right: 10px; }
 }
 
 
-
-
 /*   This is the next spot   */
-
-
 
 
 .theEye {
@@ -305,7 +313,7 @@ label { margin-right: 10px; }
   height: 20%;
   top: 40%;
   left: 40%;
-  background: radial-gradient(circle farthest-corner at 33% 33%, rgb(103, 89, 110) 0%, rgb(152, 140, 160) 80%);
+  background: radial-gradient(circle farthest-corner at 33% 33%, rgb(56, 48, 59) 0%, rgb(98, 83, 107) 80%);
   transform: translateZ(2.8vmin);
 }
 
@@ -313,6 +321,7 @@ label { margin-right: 10px; }
 .theEye {
   transform: translateZ(-39.4vmin) rotateZ(0deg) translateY(-38.5vmin) rotateX(87deg) translateX(-25vmin) rotateY(0deg);
 }
+
 
 @keyframes rotate {
   0% {
@@ -346,4 +355,5 @@ transform: rotateZ(0deg) rotateX(-25deg) rotateY(0deg);
 
 body {
   overflow: hidden;
+  
 }
